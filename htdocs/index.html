@@ -1,0 +1,35 @@
+<?php
+
+    require_once = "config.php";
+    $loginURL = $gClient->createAuthUrl();
+
+?>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mess Portal</title>
+</head>
+<body>
+
+    <form action="">
+        <input type="submit" value="Login with Google" onclick="window.location = '<?php echo $loginURL ?>';">
+    </form>
+
+    <!-- <form action="main.php" method="POST">
+        Roll Number: <input type="text" name="rollnumber"><br>
+        Hostel: <input type="text" name="hostel"><br>
+        Breakfast: <input type="number" name="breakfast"><br>
+        Lunch: <input type="number" name="lunch"><br>
+        Snacks: <input type="number" name="snacks"><br>
+        Dinner: <input type="number" name="dinner"><br>
+        Overall Cleanliness: <input type="number" name="overallcleanliness"><br>
+        <input type="submit">
+    </form> -->
+</body>
+</html>
